@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572C33B76C807D90A97B9CD0 /* Pods_PJKPager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C39F1DD9A68019F6582BAEA /* Pods_PJKPager.framework */; };
 		9307FDF1291A469B00FA3D1B /* PJKPagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307FDF0291A469B00FA3D1B /* PJKPagerApp.swift */; };
 		9307FDF5291A469C00FA3D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9307FDF4291A469C00FA3D1B /* Assets.xcassets */; };
 		9307FDF8291A469C00FA3D1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9307FDF7291A469C00FA3D1B /* Preview Assets.xcassets */; };
-		9307FE02291A469C00FA3D1B /* PJKPagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307FE01291A469C00FA3D1B /* PJKPagerTests.swift */; };
-		9307FE0C291A469C00FA3D1B /* PJKPagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307FE0B291A469C00FA3D1B /* PJKPagerUITests.swift */; };
-		9307FE0E291A469C00FA3D1B /* PJKPagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307FE0D291A469C00FA3D1B /* PJKPagerUITestsLaunchTests.swift */; };
+		9310E0D7295E384900391605 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0D6295E384900391605 /* UserModel.swift */; };
+		9310E0D929661CC100391605 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0D829661CC100391605 /* LoginManager.swift */; };
+		9310E0DC29661CF100391605 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0DB29661CF100391605 /* BaseView.swift */; };
+		9310E0DF29661D0D00391605 /* BaseViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0DE29661D0D00391605 /* BaseViewManager.swift */; };
+		9310E0E12966475B00391605 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9310E0E02966475B00391605 /* Podfile */; };
+		9310E0E329664B7F00391605 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E229664B7F00391605 /* LoginViewModel.swift */; };
+		9310E0E5296654FC00391605 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E4296654FC00391605 /* BaseViewModel.swift */; };
+		9310E0E7296658BC00391605 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E6296658BC00391605 /* HomeView.swift */; };
 		9393C17C291B7397002B27C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393C17B291B7397002B27C8 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,16 +40,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68C4ED45CA204BBF972DEC43 /* Pods-PJKPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJKPager.release.xcconfig"; path = "Target Support Files/Pods-PJKPager/Pods-PJKPager.release.xcconfig"; sourceTree = "<group>"; };
 		9307FDED291A469B00FA3D1B /* PJKPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJKPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9307FDF0291A469B00FA3D1B /* PJKPagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJKPagerApp.swift; sourceTree = "<group>"; };
 		9307FDF4291A469C00FA3D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9307FDF7291A469C00FA3D1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9307FDFD291A469C00FA3D1B /* PJKPagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJKPagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9307FE01291A469C00FA3D1B /* PJKPagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJKPagerTests.swift; sourceTree = "<group>"; };
 		9307FE07291A469C00FA3D1B /* PJKPagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJKPagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9307FE0B291A469C00FA3D1B /* PJKPagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJKPagerUITests.swift; sourceTree = "<group>"; };
-		9307FE0D291A469C00FA3D1B /* PJKPagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJKPagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9310E0D6295E384900391605 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9310E0D829661CC100391605 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		9310E0DB29661CF100391605 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9310E0DE29661D0D00391605 /* BaseViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewManager.swift; sourceTree = "<group>"; };
+		9310E0E02966475B00391605 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9310E0E229664B7F00391605 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9310E0E4296654FC00391605 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		9310E0E6296658BC00391605 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9393C17B291B7397002B27C8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		96D7E7817682027CCA692A5F /* Pods-PJKPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJKPager.debug.xcconfig"; path = "Target Support Files/Pods-PJKPager/Pods-PJKPager.debug.xcconfig"; sourceTree = "<group>"; };
+		9C39F1DD9A68019F6582BAEA /* Pods_PJKPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJKPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572C33B76C807D90A97B9CD0 /* Pods_PJKPager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +89,11 @@
 		9307FDE4291A469B00FA3D1B = {
 			isa = PBXGroup;
 			children = (
+				9310E0E02966475B00391605 /* Podfile */,
 				9307FDEF291A469B00FA3D1B /* PJKPager */,
-				9307FE00291A469C00FA3D1B /* PJKPagerTests */,
-				9307FE0A291A469C00FA3D1B /* PJKPagerUITests */,
 				9307FDEE291A469B00FA3D1B /* Products */,
+				D64DBE03F084A09C8DF07872 /* Pods */,
+				9C89E4575BDC5276AF9F2D53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +110,8 @@
 		9307FDEF291A469B00FA3D1B /* PJKPager */ = {
 			isa = PBXGroup;
 			children = (
+				9310E0D5295E382B00391605 /* Users */,
 				9307FDF0291A469B00FA3D1B /* PJKPagerApp.swift */,
-				9393C17A291B15FA002B27C8 /* Models */,
 				9393C179291B15DA002B27C8 /* Views */,
 				9307FDF4291A469C00FA3D1B /* Assets.xcassets */,
 				9307FDF6291A469C00FA3D1B /* Preview Content */,
@@ -111,36 +127,59 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9307FE00291A469C00FA3D1B /* PJKPagerTests */ = {
+		9310E0D5295E382B00391605 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				9307FE01291A469C00FA3D1B /* PJKPagerTests.swift */,
+				9310E0D6295E384900391605 /* UserModel.swift */,
 			);
-			path = PJKPagerTests;
+			path = Users;
 			sourceTree = "<group>";
 		};
-		9307FE0A291A469C00FA3D1B /* PJKPagerUITests */ = {
+		9310E0DA29661CC700391605 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9307FE0B291A469C00FA3D1B /* PJKPagerUITests.swift */,
-				9307FE0D291A469C00FA3D1B /* PJKPagerUITestsLaunchTests.swift */,
+				9393C17B291B7397002B27C8 /* LoginView.swift */,
+				9310E0D829661CC100391605 /* LoginManager.swift */,
+				9310E0E229664B7F00391605 /* LoginViewModel.swift */,
 			);
-			path = PJKPagerUITests;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9310E0DD29661CFB00391605 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9310E0DB29661CF100391605 /* BaseView.swift */,
+				9310E0DE29661D0D00391605 /* BaseViewManager.swift */,
+				9310E0E4296654FC00391605 /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		9393C179291B15DA002B27C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9393C17B291B7397002B27C8 /* LoginView.swift */,
+				9310E0DD29661CFB00391605 /* Base */,
+				9310E0DA29661CC700391605 /* Login */,
+				9310E0E6296658BC00391605 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9393C17A291B15FA002B27C8 /* Models */ = {
+		9C89E4575BDC5276AF9F2D53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C39F1DD9A68019F6582BAEA /* Pods_PJKPager.framework */,
 			);
-			path = Models;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D64DBE03F084A09C8DF07872 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96D7E7817682027CCA692A5F /* Pods-PJKPager.debug.xcconfig */,
+				68C4ED45CA204BBF972DEC43 /* Pods-PJKPager.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9307FE11291A469C00FA3D1B /* Build configuration list for PBXNativeTarget "PJKPager" */;
 			buildPhases = (
+				EE8666A2391FD51D46C141CE /* [CP] Check Pods Manifest.lock */,
 				9307FDE9291A469B00FA3D1B /* Sources */,
 				9307FDEA291A469B00FA3D1B /* Frameworks */,
 				9307FDEB291A469B00FA3D1B /* Resources */,
+				B789E163B7D4977AB0C8E889 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9310E0E12966475B00391605 /* Podfile in Resources */,
 				9307FDF8291A469C00FA3D1B /* Preview Assets.xcassets in Resources */,
 				9307FDF5291A469C00FA3D1B /* Assets.xcassets in Resources */,
 			);
@@ -268,13 +310,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B789E163B7D4977AB0C8E889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PJKPager/Pods-PJKPager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PJKPager/Pods-PJKPager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PJKPager/Pods-PJKPager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8666A2391FD51D46C141CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PJKPager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9307FDE9291A469B00FA3D1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9310E0E7296658BC00391605 /* HomeView.swift in Sources */,
 				9393C17C291B7397002B27C8 /* LoginView.swift in Sources */,
+				9310E0D929661CC100391605 /* LoginManager.swift in Sources */,
+				9310E0DC29661CF100391605 /* BaseView.swift in Sources */,
+				9310E0D7295E384900391605 /* UserModel.swift in Sources */,
 				9307FDF1291A469B00FA3D1B /* PJKPagerApp.swift in Sources */,
+				9310E0E5296654FC00391605 /* BaseViewModel.swift in Sources */,
+				9310E0DF29661D0D00391605 /* BaseViewManager.swift in Sources */,
+				9310E0E329664B7F00391605 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9307FE02291A469C00FA3D1B /* PJKPagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9307FE0E291A469C00FA3D1B /* PJKPagerUITestsLaunchTests.swift in Sources */,
-				9307FE0C291A469C00FA3D1B /* PJKPagerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +515,7 @@
 		};
 		9307FE12291A469C00FA3D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D7E7817682027CCA692A5F /* Pods-PJKPager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +544,7 @@
 		};
 		9307FE13291A469C00FA3D1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C4ED45CA204BBF972DEC43 /* Pods-PJKPager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

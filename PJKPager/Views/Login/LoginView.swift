@@ -13,8 +13,8 @@ enum LoginField {
 }
 
 struct LoginView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @ObservedObject var vm = LoginViewModel()
+    @State var showAlert = false
     @FocusState private var loginFieldFocus: LoginField?
     @FocusState private var fieldFocus: Bool
     
@@ -28,7 +28,7 @@ struct LoginView: View {
             
             Text("Welcome to PJK Pager")
             
-            TextField("Username", text: $username)
+            TextField("Username", text: $vm.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding([.horizontal], 80)
                 .focused($loginFieldFocus, equals: .username)
@@ -36,12 +36,19 @@ struct LoginView: View {
                     loginFieldFocus = .password
                 }
             
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $vm.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding([.horizontal], 80)
                 .focused($loginFieldFocus, equals: .password)
             
+            Button("Login") {
+                showAlert = !vm.loginUser()
+            }
+            .padding()
+            .background(Color.white)
+            
         }
+        .alert(isPresented: $showAlert, content: {Alert(title: Text(vm.error))})
         .padding()
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

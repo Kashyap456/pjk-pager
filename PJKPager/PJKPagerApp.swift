@@ -11,7 +11,7 @@ import SwiftUI
 struct PJKPagerApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+           HomeView()
         }
     }
 }
