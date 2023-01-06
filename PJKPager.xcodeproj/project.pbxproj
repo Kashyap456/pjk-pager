@@ -19,6 +19,7 @@
 		9310E0E329664B7F00391605 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E229664B7F00391605 /* LoginViewModel.swift */; };
 		9310E0E5296654FC00391605 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E4296654FC00391605 /* BaseViewModel.swift */; };
 		9310E0E7296658BC00391605 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E6296658BC00391605 /* HomeView.swift */; };
+		9310E0E929666F7500391605 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9310E0E829666F7500391605 /* GoogleService-Info.plist */; };
 		9393C17C291B7397002B27C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393C17B291B7397002B27C8 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +52,11 @@
 		9310E0D829661CC100391605 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		9310E0DB29661CF100391605 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		9310E0DE29661D0D00391605 /* BaseViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewManager.swift; sourceTree = "<group>"; };
-		9310E0E02966475B00391605 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9310E0E02966475B00391605 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9310E0E229664B7F00391605 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9310E0E4296654FC00391605 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		9310E0E6296658BC00391605 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9310E0E829666F7500391605 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9393C17B291B7397002B27C8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		96D7E7817682027CCA692A5F /* Pods-PJKPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJKPager.debug.xcconfig"; path = "Target Support Files/Pods-PJKPager/Pods-PJKPager.debug.xcconfig"; sourceTree = "<group>"; };
 		9C39F1DD9A68019F6582BAEA /* Pods_PJKPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJKPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 		9307FDEF291A469B00FA3D1B /* PJKPager */ = {
 			isa = PBXGroup;
 			children = (
+				9310E0E829666F7500391605 /* GoogleService-Info.plist */,
 				9310E0D5295E382B00391605 /* Users */,
 				9307FDF0291A469B00FA3D1B /* PJKPagerApp.swift */,
 				9393C179291B15DA002B27C8 /* Views */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9310E0E12966475B00391605 /* Podfile in Resources */,
+				9310E0E929666F7500391605 /* GoogleService-Info.plist in Resources */,
 				9307FDF8291A469C00FA3D1B /* Preview Assets.xcassets in Resources */,
 				9307FDF5291A469C00FA3D1B /* Assets.xcassets in Resources */,
 			);

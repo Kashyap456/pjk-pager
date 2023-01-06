@@ -9,22 +9,31 @@ import Foundation
 import SwiftUI
 import Combine
 import KeychainAccess
+import FirebaseAuth
 
 class LoginViewModel: ObservableObject {
-    @Published var username = ""
+    @Published var email = ""
     @Published var password = ""
-    var error = ""
+    var errorMessage = ""
     let keychain = Keychain(service: "com.PJK.PJKPager")
     
-    func loginUser() -> Bool  {
-        if username == "kashyap456", password == "dinkdoink" {
-            let token = UUID().uuidString
-            keychain["pjk-pager-authtoken"] = token
-            LoginManager.Authenticated.send(true)
-            return true
-        } else {
-            error = "please try again"
-            return false
+    func loginUser() {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let `self` = self else { return }
+            if (error != nil) {
+                self.errorMessage = "please try again"
+                return
+            }
+            let userRes = authResult?.user
+            userRes?.getIDToken(completion: { (res, err) in
+                if (err != nil) {
+                    self.errorMessage = "please try again"
+                    return
+                } else {
+                    self.keychain["pjk-pager-authtoken"] = res
+                    LoginManager.Authenticated.send(true)
+                }
+            })
         }
     }
 }

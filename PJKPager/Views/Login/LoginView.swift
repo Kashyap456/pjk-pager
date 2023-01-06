@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum LoginField {
-    case username
+    case email
     case password
 }
 
@@ -28,10 +28,10 @@ struct LoginView: View {
             
             Text("Welcome to PJK Pager")
             
-            TextField("Username", text: $vm.username)
+            TextField("Email", text: $vm.email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding([.horizontal], 80)
-                .focused($loginFieldFocus, equals: .username)
+                .focused($loginFieldFocus, equals: .email)
                 .onSubmit {
                     loginFieldFocus = .password
                 }
@@ -42,17 +42,20 @@ struct LoginView: View {
                 .focused($loginFieldFocus, equals: .password)
             
             Button("Login") {
-                showAlert = !vm.loginUser()
+                vm.loginUser()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    showAlert = !LoginManager.isAuthenticated()
+                }
             }
             .padding()
             .background(Color.white)
             
         }
-        .alert(isPresented: $showAlert, content: {Alert(title: Text(vm.error))})
+        .alert(isPresented: $showAlert, content: {Alert(title: Text(vm.errorMessage))})
         .padding()
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                loginFieldFocus = .username
+                loginFieldFocus = .email
             }
         }
     }
