@@ -9,11 +9,18 @@ import Foundation
 import SwiftUI
 
 struct BaseView : View {
+    @EnvironmentObject var router: Router<Path>
+    @EnvironmentObject var user: User
+    
     var bm = BaseViewModel()
+    
     var body : some View {
         VStack {
+            Text("Hello")
+            Text(user.username)
+            
             Button("Log Out") {
-                bm.logoutUser()
+                bm.logoutUser(router: router)
             }
         }
     }

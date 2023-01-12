@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct User {
-    var firstName: String?
-    var lastName: String?
-    var sumName: String?
-    var email: String?
-    var phoneNum: String?
+class User : ObservableObject {
+    @Published var name = ""
+    @Published var username = ""
+    @Published var phone = ""
+    @Published var email = ""
+    @Published var password = ""
 }

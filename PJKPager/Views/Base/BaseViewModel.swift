@@ -11,8 +11,9 @@ import KeychainAccess
 class BaseViewModel : ObservableObject {
     let keychain = Keychain(service: "com.PJK.PJKPager")
     
-    func logoutUser() {
+    func logoutUser(router: Router<Path>) {
         LoginManager.Authenticated.send(false)
+        router.pop()
         keychain["pjk-pager-authtoken"] = nil
     }
 }

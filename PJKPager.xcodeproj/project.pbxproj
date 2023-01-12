@@ -20,6 +20,7 @@
 		9310E0E5296654FC00391605 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E4296654FC00391605 /* BaseViewModel.swift */; };
 		9310E0E7296658BC00391605 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0E6296658BC00391605 /* HomeView.swift */; };
 		9310E0E929666F7500391605 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9310E0E829666F7500391605 /* GoogleService-Info.plist */; };
+		9310E0EB296F9E9800391605 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E0EA296F9E9800391605 /* CreateAccountView.swift */; };
 		9393C17C291B7397002B27C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393C17B291B7397002B27C8 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		9310E0E4296654FC00391605 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		9310E0E6296658BC00391605 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9310E0E829666F7500391605 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9310E0EA296F9E9800391605 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		9393C17B291B7397002B27C8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		96D7E7817682027CCA692A5F /* Pods-PJKPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJKPager.debug.xcconfig"; path = "Target Support Files/Pods-PJKPager/Pods-PJKPager.debug.xcconfig"; sourceTree = "<group>"; };
 		9C39F1DD9A68019F6582BAEA /* Pods_PJKPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJKPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				9393C17B291B7397002B27C8 /* LoginView.swift */,
 				9310E0D829661CC100391605 /* LoginManager.swift */,
 				9310E0E229664B7F00391605 /* LoginViewModel.swift */,
+				9310E0EA296F9E9800391605 /* CreateAccountView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				9393C17C291B7397002B27C8 /* LoginView.swift in Sources */,
 				9310E0D929661CC100391605 /* LoginManager.swift in Sources */,
 				9310E0DC29661CF100391605 /* BaseView.swift in Sources */,
+				9310E0EB296F9E9800391605 /* CreateAccountView.swift in Sources */,
 				9310E0D7295E384900391605 /* UserModel.swift in Sources */,
 				9307FDF1291A469B00FA3D1B /* PJKPagerApp.swift in Sources */,
 				9310E0E5296654FC00391605 /* BaseViewModel.swift in Sources */,

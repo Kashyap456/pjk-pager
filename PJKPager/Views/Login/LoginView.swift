@@ -14,6 +14,8 @@ enum LoginField {
 
 struct LoginView: View {
     @ObservedObject var vm = LoginViewModel()
+    @EnvironmentObject var router: Router<Path>
+    @EnvironmentObject var user: User
     @State var showAlert = false
     @FocusState private var loginFieldFocus: LoginField?
     @FocusState private var fieldFocus: Bool
@@ -42,13 +44,17 @@ struct LoginView: View {
                 .focused($loginFieldFocus, equals: .password)
             
             Button("Login") {
-                vm.loginUser()
+                vm.loginUser(router: router, user: user)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     showAlert = !LoginManager.isAuthenticated()
                 }
             }
             .padding()
             .background(Color.white)
+            
+            Button("Don't have an account?") {
+                router.push(.CreateAccount)
+            }
             
         }
         .alert(isPresented: $showAlert, content: {Alert(title: Text(vm.errorMessage))})

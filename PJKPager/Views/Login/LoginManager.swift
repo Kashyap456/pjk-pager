@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import KeychainAccess
 
+
 struct LoginManager {
     static let Authenticated = PassthroughSubject<Bool, Never>()
     
