@@ -25,14 +25,22 @@ class LoginViewModel: ObservableObject {
     let db = Firestore.firestore()
     
     func loadUser(user: User) {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let uid = Auth.auth().currentUser?.uid else {
+            print("get user error")
+            return
+        }
         let doc = db.collection("users").document(uid)
         doc.getDocument { (document, error) in
-            guard error == nil else { return }
+            guard error == nil else {
+                print("get doc error")
+                return
+            }
             
+            print(uid)
             if let document = document, document.exists {
                 let data = document.data()
                 if let data = data {
+                    print(data)
                     user.username = data["username"] as? String ?? ""
                 }
             }
@@ -77,23 +85,28 @@ class LoginViewModel: ObservableObject {
                     self.errorMessage = "please try again"
                     return
                 } else {
-                    self.db.collection("users").document(res!).setData([
-                        "name": self.name,
-                        "phone": self.phone,
-                        "email": self.email,
-                        "username": self.username,
-                        "createdAt": FieldValue.serverTimestamp()
-                    ]) { dberr in
-                        if let dberr = dberr {
-                            self.errorMessage = "DB write error"
-                        } else {
-                            self.keychain["pjk-pager-authtoken"] = res
-                            router.push(.Base)
-                            LoginManager.Authenticated.send(true)
-                        }
-                    }
+                    self.keychain["pjk-pager-authtoken"] = res
+                    LoginManager.Authenticated.send(true)
                 }
             })
+            
+            guard let uid = Auth.auth().currentUser?.uid else {
+                print("get user error")
+                return
+            }
+            
+            self.db.collection("users").document(uid).setData([
+                "name": self.name,
+                "phone": self.phone,
+                "email": self.email,
+                "username": self.username,
+                "createdAt": FieldValue.serverTimestamp()
+            ]) { dberr in
+                if let dberr = dberr {
+                    self.errorMessage = "DB write error"
+                }
+            }
+            router.push(.Base)
         }
     }
 }
